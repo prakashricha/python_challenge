@@ -47,23 +47,13 @@ x=Val.index(maxval)
 y=Val.index(minval)
 
 
-val_zip=zip(month,profitloss,Val)
+#val_zip=zip(month,profitloss,Val)
+
+#printing final output
 
 print(f"Total Months: {totalmonth}")
 print(f"Total:  {totalprofitloss}")
 print(f"Average  Change: {Averagevaluechange}")
 print(f"Greatest Increase in Profits: {month[x]} (${maxval})")
 print(f"Greatest Decrease in Profits: {month[y]} (${minval})")
-
-'''#writing into the file
-output_file = os.path.join('..','..','Resources', 'datafile.csv')
-    #  Open the output file
-with open(output_file, "w", newline="") as datafile:
-    writer = csv.writer(datafile)
-# Write the header row
-    writer.writerow(["date","profit/loss","change value"])
- # Write in zipped rows
-    writer.writerows(val_zip)
-
-data_file = os.path.join('..', '..', 'Resources', 'datafile.csv')'''
 
